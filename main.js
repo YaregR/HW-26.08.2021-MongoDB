@@ -10,8 +10,7 @@ const run = async () => {
     // const doc = await article.save();
     // console.log(doc._id);
 
-    const docs = await ArticleModel.find({ 'title': 'Вакцинация' }).updateOne( { text: 'Аллах Акбар!' }, () => {     
-    });
+    const docs = await ArticleModel.find({ 'title': 'Вакцинация' }).updateOne( { text: 'Аллах Акбар!' });
     
     console.log(docs);
 
